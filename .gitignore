@@ -1,0 +1,13 @@
+# 编译产物
+build/
+DerivedData/
+.swiftpm/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# 本机配置（Bundle ID、开发者团队），见 Config/Local.xcconfig.example
+Config/Local.xcconfig
+
+# 系统 / 临时文件
+.DS_Store
+.york-sync.tgz

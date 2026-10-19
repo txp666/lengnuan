@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>YorkAppGroup</key>
+	<string>group.$(YORK_BUNDLE_ID)</string>
+	<key>INAlternativeAppNames</key>
+	<array>
+		<dict>
+			<key>INAlternativeAppName</key>
+			<string>空调</string>
+			<key>INAlternativeAppNamePronunciationHint</key>
+			<string>kong tiao</string>
+		</dict>
+	</array>
+</dict>
+</plist>
