@@ -1,10 +1,10 @@
 import Foundation
 
 /// iOS 上 App、Siri 意图、小组件运行在不同进程，靠 App Group 共享登录态和缓存。
-/// App Group 的名字来自 Info.plist 的 YorkAppGroup（= group.$(YORK_BUNDLE_ID)，见 Config/Base.xcconfig）。
+/// App Group 的名字来自 Info.plist 的 AppGroupID（= group.$(APP_BUNDLE_ID)，见 Config/Base.xcconfig）。
 enum AppConfig {
     #if os(iOS)
-    static let appGroup: String? = Bundle.main.object(forInfoDictionaryKey: "YorkAppGroup") as? String
+    static let appGroup: String? = Bundle.main.object(forInfoDictionaryKey: "AppGroupID") as? String
     #else
     static let appGroup: String? = nil
     #endif

@@ -2,7 +2,7 @@ import SwiftUI
 
 @main
 @MainActor
-struct YorkACPhoneApp: App {
+struct LengnuanApp: App {
     @StateObject private var store = ACStore()
     @Environment(\.scenePhase) private var scenePhase
 

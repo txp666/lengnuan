@@ -1,7 +1,7 @@
 import AppIntents
 
-/// 对 Siri 说的话。每句都必须包含 App 名（约克空调；Info.plist 里另加了别名“空调”）。
-struct YorkACShortcuts: AppShortcutsProvider {
+/// 对 Siri 说的话。每句都必须包含 App 名（冷暖；Info.plist 里另加了别名“空调”）。
+struct LengnuanShortcuts: AppShortcutsProvider {
     static var appShortcuts: [AppShortcut] {
         AppShortcut(
             intent: PowerIntent(),

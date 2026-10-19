@@ -5,7 +5,7 @@ cd "$(dirname "$0")/.."
 mkdir -p build
 exec > >(tee build/check-ios.log) 2>&1
 echo "▶ $(xcodebuild -version | head -1)，正在编译 iPhone 版…"
-xcodebuild -project YorkAC.xcodeproj -scheme YorkAC -configuration Debug \
+xcodebuild -project Lengnuan.xcodeproj -scheme Lengnuan -configuration Debug \
   -destination 'generic/platform=iOS' -derivedDataPath build/ios \
   CODE_SIGNING_ALLOWED=NO build > build/ios-full.log 2>&1
 code=$?

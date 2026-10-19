@@ -140,7 +140,7 @@ struct LoginView: View {
                 .shadow(color: brandGradient[1].opacity(0.35), radius: 10, y: 4)
                 .padding(.top, phoneLayout ? 40 : 4)
             VStack(spacing: 4) {
-                Text("约克空调").font(.title2.bold())
+                Text("冷暖").font(.title2.bold())
                 Text("用「约克智慧家」账号登录").font(.callout).foregroundStyle(.secondary)
             }
 
@@ -218,7 +218,7 @@ struct LoginView: View {
             #if os(macOS)
             if compact {
                 Divider()
-                Button("退出 约克空调") { quitApp() }
+                Button("退出冷暖") { quitApp() }
                     .buttonStyle(.borderless)
                     .font(.caption)
             }
@@ -323,7 +323,7 @@ struct ControlView: View {
             Button("退出登录", role: .destructive) { store.logout() }
             #if os(macOS)
             if compact {
-                Button("退出 约克空调") { quitApp() }
+                Button("退出冷暖") { quitApp() }
             }
             #endif
         } label: {

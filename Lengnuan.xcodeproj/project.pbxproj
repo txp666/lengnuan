@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AB839F2D9C6958D1C6917FA /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C265F9D4C826109074DF423B /* Storage.swift */; };
+		1ED242A8998D0560474AEA87 /* ACIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8E44DFE606E6B725170768 /* ACIntents.swift */; };
+		1EE636FCCD405DA58E341962 /* YorkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C11C7EE920935F6A18087B /* YorkAPI.swift */; };
+		24B14661352FD37F99E46F7A /* ACService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D38364DFD3B78871DE2E860 /* ACService.swift */; };
+		29C4C98FE1E499834C465A51 /* YorkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C11C7EE920935F6A18087B /* YorkAPI.swift */; };
+		2FE533B4FD5224B0172FBFBA /* YorkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C11C7EE920935F6A18087B /* YorkAPI.swift */; };
+		34E6F85881B41994CB80E28E /* ACModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FBF37B949FE4BA2BC920B8 /* ACModel.swift */; };
+		543D7242DACF26775BA606FE /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E0CBE658120D67AE4B42D3 /* Views.swift */; };
+		54E6EF42DF7F71484C109D11 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9ACD1AA88C1983BC6FC63C /* Keychain.swift */; };
+		69BC3A2FC8AE3156DDA623D1 /* ACIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8E44DFE606E6B725170768 /* ACIntents.swift */; };
+		79916E32D6B8D14EAE70E02E /* LengnuanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF029AE001C68E708C89C0 /* LengnuanApp.swift */; };
+		7EC13CCFF255F917876CE1F1 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C265F9D4C826109074DF423B /* Storage.swift */; };
+		8E166A3CE9EDEF1161CCF90B /* ACWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639DF680BBB74D6BCFC6DFBF /* ACWidget.swift */; };
+		957472E9806EE1F90661C080 /* LengnuanMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169B54C61DA1366DC9EC6D0C /* LengnuanMacApp.swift */; };
+		9801F6B516830D32A31E74C2 /* SiriHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB0FE6B9DD7F09D72FE6A99 /* SiriHelpView.swift */; };
+		A004E7EBD60E253D4649EC00 /* ACService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D38364DFD3B78871DE2E860 /* ACService.swift */; };
+		B0FE5DDA88DB0F3A08993DC8 /* ACStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED5A5FCE7CD0D29C0973433 /* ACStore.swift */; };
+		B463A573A8E63A39C3757302 /* ACService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D38364DFD3B78871DE2E860 /* ACService.swift */; };
+		B880C60CA0DD8310135FB6F8 /* ACModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FBF37B949FE4BA2BC920B8 /* ACModel.swift */; };
+		C0664B71108A383B87F94482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 141DA752653C129AC49FF888 /* Assets.xcassets */; };
+		C190F45887EDF3AF9AAF4D84 /* ACModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FBF37B949FE4BA2BC920B8 /* ACModel.swift */; };
+		CB503D5D27FDFD570D282198 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9ACD1AA88C1983BC6FC63C /* Keychain.swift */; };
+		D1D69696A505D57F121EB1FF /* LengnuanWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1C0FE2BBDCA84790CBF8D385 /* LengnuanWidget.appex */; settings = {ATTRIBUTES = (RemoveHeaderOnCopy, ); }; };
+		D4AA3A02C6408D33F3D59783 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C265F9D4C826109074DF423B /* Storage.swift */; };
+		D711D4E976DCADD062929CBC /* ACStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED5A5FCE7CD0D29C0973433 /* ACStore.swift */; };
+		DC1A686FD3ABCE0790D78C26 /* LengnuanShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EA45E3D53CE35FE3DACF2F /* LengnuanShortcuts.swift */; };
+		E4CB29924F9F2CB1E4C26557 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E0CBE658120D67AE4B42D3 /* Views.swift */; };
+		EE742096A049D33FBB33A6DE /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9ACD1AA88C1983BC6FC63C /* Keychain.swift */; };
+		FD0B37359390EF5E55F997AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED9634E6DC5EF6E28F2BCA27 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F4713AC95022FA400BE8721 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75C9E0DA64BC8AA448F58D9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91234461D3D07C71EADB586F;
+			remoteInfo = LengnuanWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		348628C7F7D2A7F25315C6F6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D1D69696A505D57F121EB1FF /* LengnuanWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0EBF029AE001C68E708C89C0 /* LengnuanApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LengnuanApp.swift; sourceTree = "<group>"; };
+		141DA752653C129AC49FF888 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		169B54C61DA1366DC9EC6D0C /* LengnuanMacApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LengnuanMacApp.swift; sourceTree = "<group>"; };
+		1C0FE2BBDCA84790CBF8D385 /* LengnuanWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LengnuanWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DEE9EE45A2C53299D4695C1 /* york_ac.py */ = {isa = PBXFileReference; includeInIndex = 1; path = york_ac.py; sourceTree = "<group>"; };
+		36C11C7EE920935F6A18087B /* YorkAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YorkAPI.swift; sourceTree = "<group>"; };
+		540ACBBFF02DCB87E9250427 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		59EA45E3D53CE35FE3DACF2F /* LengnuanShortcuts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LengnuanShortcuts.swift; sourceTree = "<group>"; };
+		5D38364DFD3B78871DE2E860 /* ACService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ACService.swift; sourceTree = "<group>"; };
+		5D98BF9792DE6F98B92922D0 /* PreviewApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreviewApp.swift; sourceTree = "<group>"; };
+		5E8E44DFE606E6B725170768 /* ACIntents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ACIntents.swift; sourceTree = "<group>"; };
+		639DF680BBB74D6BCFC6DFBF /* ACWidget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ACWidget.swift; sourceTree = "<group>"; };
+		6A11A2A9D2A7810B04A15133 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ED5A5FCE7CD0D29C0973433 /* ACStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ACStore.swift; sourceTree = "<group>"; };
+		73B019010EA3D97088D9975B /* check-ios.command */ = {isa = PBXFileReference; includeInIndex = 1; path = "check-ios.command"; sourceTree = "<group>"; };
+		7822A18E0F2EFD854E805D7F /* LengnuanWidget.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = LengnuanWidget.entitlements; sourceTree = "<group>"; };
+		7DB0FE6B9DD7F09D72FE6A99 /* SiriHelpView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SiriHelpView.swift; sourceTree = "<group>"; };
+		83C64949801BABFD43DB97E0 /* Base.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		8745CA86BA5FD06BF71A4C45 /* Local.xcconfig.example */ = {isa = PBXFileReference; includeInIndex = 1; path = Local.xcconfig.example; sourceTree = "<group>"; };
+		8A88376A469ED8F6BA75E917 /* Lengnuan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lengnuan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FFE8A585BEFB517D1FBE1AC /* preview.command */ = {isa = PBXFileReference; includeInIndex = 1; path = preview.command; sourceTree = "<group>"; };
+		A6FBF37B949FE4BA2BC920B8 /* ACModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ACModel.swift; sourceTree = "<group>"; };
+		C265F9D4C826109074DF423B /* Storage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		C7F699A0A3B4F9D9FF094A42 /* screenshots.command */ = {isa = PBXFileReference; includeInIndex = 1; path = screenshots.command; sourceTree = "<group>"; };
+		D005058CF3E7440D354DCB6F /* Lengnuan.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = Lengnuan.entitlements; sourceTree = "<group>"; };
+		E21B0948CBBB67C0D01ADF2C /* Lengnuan-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lengnuan-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7E0CBE658120D67AE4B42D3 /* Views.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
+		E95FC4901905072CE38FFA22 /* build-mac.command */ = {isa = PBXFileReference; includeInIndex = 1; path = "build-mac.command"; sourceTree = "<group>"; };
+		ED9634E6DC5EF6E28F2BCA27 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F01445F695E4E971CFEBBBD1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD9ACD1AA88C1983BC6FC63C /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		042A065E5139E7B9441CB3E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A654FA39E8E7353419325F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E27288C1F96AA62375F0D1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D36182E21BF8BCB944D8A33 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				83C64949801BABFD43DB97E0 /* Base.xcconfig */,
+				8745CA86BA5FD06BF71A4C45 /* Local.xcconfig.example */,
+			);
+			name = Config;
+			path = Config;
+			sourceTree = "<group>";
+		};
+		11C9E97E4E1B95E2C5975BF3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				36C11C7EE920935F6A18087B /* YorkAPI.swift */,
+				A6FBF37B949FE4BA2BC920B8 /* ACModel.swift */,
+				FD9ACD1AA88C1983BC6FC63C /* Keychain.swift */,
+				C265F9D4C826109074DF423B /* Storage.swift */,
+				5D38364DFD3B78871DE2E860 /* ACService.swift */,
+				6ED5A5FCE7CD0D29C0973433 /* ACStore.swift */,
+				E7E0CBE658120D67AE4B42D3 /* Views.swift */,
+			);
+			name = Shared;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		259091B6F514B977285A5AE9 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				639DF680BBB74D6BCFC6DFBF /* ACWidget.swift */,
+				F01445F695E4E971CFEBBBD1 /* Info.plist */,
+				7822A18E0F2EFD854E805D7F /* LengnuanWidget.entitlements */,
+			);
+			name = Widget;
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		4132469D7AD4BC141C372031 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				5D98BF9792DE6F98B92922D0 /* PreviewApp.swift */,
+			);
+			name = Preview;
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		467C8BA089F604F42E1314CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A88376A469ED8F6BA75E917 /* Lengnuan.app */,
+				1C0FE2BBDCA84790CBF8D385 /* LengnuanWidget.appex */,
+				E21B0948CBBB67C0D01ADF2C /* Lengnuan-Mac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A9297DFCA1D927365C27EAE /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				E95FC4901905072CE38FFA22 /* build-mac.command */,
+				73B019010EA3D97088D9975B /* check-ios.command */,
+				9FFE8A585BEFB517D1FBE1AC /* preview.command */,
+				C7F699A0A3B4F9D9FF094A42 /* screenshots.command */,
+			);
+			name = scripts;
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		4BD32B4CD4B38EF91FF4CE27 = {
+			isa = PBXGroup;
+			children = (
+				467C8BA089F604F42E1314CC /* Products */,
+				9F08521906CDB37F7FD4DC37 /* Frameworks */,
+				0D36182E21BF8BCB944D8A33 /* Config */,
+				CFB85CAE149F76CF316D7916 /* Sources */,
+				540ACBBFF02DCB87E9250427 /* README.md */,
+				4A9297DFCA1D927365C27EAE /* scripts */,
+				7A3D023A315A376741D294E0 /* tools */,
+			);
+			sourceTree = "<group>";
+		};
+		57D55837187A9A1DBD531E79 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				5E8E44DFE606E6B725170768 /* ACIntents.swift */,
+			);
+			name = Intents;
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		7A3D023A315A376741D294E0 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				1DEE9EE45A2C53299D4695C1 /* york_ac.py */,
+			);
+			name = tools;
+			path = tools;
+			sourceTree = "<group>";
+		};
+		9F08521906CDB37F7FD4DC37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFB85CAE149F76CF316D7916 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				11C9E97E4E1B95E2C5975BF3 /* Shared */,
+				DC4E9E36A7A8FC811304B607 /* iOS */,
+				57D55837187A9A1DBD531E79 /* Intents */,
+				259091B6F514B977285A5AE9 /* Widget */,
+				F826D5D90AB21C1B7A27647F /* Mac */,
+				4132469D7AD4BC141C372031 /* Preview */,
+			);
+			name = Sources;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DC4E9E36A7A8FC811304B607 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0EBF029AE001C68E708C89C0 /* LengnuanApp.swift */,
+				59EA45E3D53CE35FE3DACF2F /* LengnuanShortcuts.swift */,
+				7DB0FE6B9DD7F09D72FE6A99 /* SiriHelpView.swift */,
+				ED9634E6DC5EF6E28F2BCA27 /* Assets.xcassets */,
+				6A11A2A9D2A7810B04A15133 /* Info.plist */,
+				D005058CF3E7440D354DCB6F /* Lengnuan.entitlements */,
+			);
+			name = iOS;
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		F826D5D90AB21C1B7A27647F /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				169B54C61DA1366DC9EC6D0C /* LengnuanMacApp.swift */,
+				141DA752653C129AC49FF888 /* Assets.xcassets */,
+			);
+			name = Mac;
+			path = Mac;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		779BFCA2DCB4B9C27017D11E /* Lengnuan-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A83AD56A19BECE59BE4164DD /* Build configuration list for PBXNativeTarget "Lengnuan-Mac" */;
+			buildPhases = (
+				8EE94087A35FD2F69642A509 /* Sources */,
+				0A654FA39E8E7353419325F7 /* Frameworks */,
+				54297216E3B1D8649405F08B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lengnuan-Mac";
+			productName = "Lengnuan-Mac";
+			productReference = E21B0948CBBB67C0D01ADF2C /* Lengnuan-Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		91234461D3D07C71EADB586F /* LengnuanWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F51ABB52072648698EADC84 /* Build configuration list for PBXNativeTarget "LengnuanWidget" */;
+			buildPhases = (
+				FD1510FC8272D4E266373BE5 /* Sources */,
+				6E27288C1F96AA62375F0D1D /* Frameworks */,
+				4162A6A513CF8C192E5582A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LengnuanWidget;
+			productName = LengnuanWidget;
+			productReference = 1C0FE2BBDCA84790CBF8D385 /* LengnuanWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F3F7D89483FACA34B938BA21 /* Lengnuan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46B3E7583A4040289FF73D2A /* Build configuration list for PBXNativeTarget "Lengnuan" */;
+			buildPhases = (
+				D9917AF3F185EAAA4C610121 /* Sources */,
+				042A065E5139E7B9441CB3E1 /* Frameworks */,
+				9B5210506E0CAB050A90B833 /* Resources */,
+				348628C7F7D2A7F25315C6F6 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				438AEF3DEB1E39A78222D250 /* PBXTargetDependency */,
+			);
+			name = Lengnuan;
+			productName = Lengnuan;
+			productReference = 8A88376A469ED8F6BA75E917 /* Lengnuan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75C9E0DA64BC8AA448F58D9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 2710;
+			};
+			buildConfigurationList = 442A39AD109D5059B2382145 /* Build configuration list for PBXProject "Lengnuan" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				"zh-Hans",
+				en,
+				Base,
+			);
+			mainGroup = 4BD32B4CD4B38EF91FF4CE27;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 100;
+			productRefGroup = 467C8BA089F604F42E1314CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3F7D89483FACA34B938BA21 /* Lengnuan */,
+				91234461D3D07C71EADB586F /* LengnuanWidget */,
+				779BFCA2DCB4B9C27017D11E /* Lengnuan-Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4162A6A513CF8C192E5582A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54297216E3B1D8649405F08B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0664B71108A383B87F94482 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B5210506E0CAB050A90B833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD0B37359390EF5E55F997AF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EE94087A35FD2F69642A509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FE533B4FD5224B0172FBFBA /* YorkAPI.swift in Sources */,
+				34E6F85881B41994CB80E28E /* ACModel.swift in Sources */,
+				54E6EF42DF7F71484C109D11 /* Keychain.swift in Sources */,
+				1AB839F2D9C6958D1C6917FA /* Storage.swift in Sources */,
+				B463A573A8E63A39C3757302 /* ACService.swift in Sources */,
+				D711D4E976DCADD062929CBC /* ACStore.swift in Sources */,
+				E4CB29924F9F2CB1E4C26557 /* Views.swift in Sources */,
+				957472E9806EE1F90661C080 /* LengnuanMacApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9917AF3F185EAAA4C610121 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29C4C98FE1E499834C465A51 /* YorkAPI.swift in Sources */,
+				C190F45887EDF3AF9AAF4D84 /* ACModel.swift in Sources */,
+				CB503D5D27FDFD570D282198 /* Keychain.swift in Sources */,
+				7EC13CCFF255F917876CE1F1 /* Storage.swift in Sources */,
+				24B14661352FD37F99E46F7A /* ACService.swift in Sources */,
+				B0FE5DDA88DB0F3A08993DC8 /* ACStore.swift in Sources */,
+				543D7242DACF26775BA606FE /* Views.swift in Sources */,
+				79916E32D6B8D14EAE70E02E /* LengnuanApp.swift in Sources */,
+				DC1A686FD3ABCE0790D78C26 /* LengnuanShortcuts.swift in Sources */,
+				9801F6B516830D32A31E74C2 /* SiriHelpView.swift in Sources */,
+				69BC3A2FC8AE3156DDA623D1 /* ACIntents.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1510FC8272D4E266373BE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EE636FCCD405DA58E341962 /* YorkAPI.swift in Sources */,
+				B880C60CA0DD8310135FB6F8 /* ACModel.swift in Sources */,
+				EE742096A049D33FBB33A6DE /* Keychain.swift in Sources */,
+				D4AA3A02C6408D33F3D59783 /* Storage.swift in Sources */,
+				A004E7EBD60E253D4649EC00 /* ACService.swift in Sources */,
+				1ED242A8998D0560474AEA87 /* ACIntents.swift in Sources */,
+				8E166A3CE9EDEF1161CCF90B /* ACWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		438AEF3DEB1E39A78222D250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LengnuanWidget;
+			target = 91234461D3D07C71EADB586F /* LengnuanWidget */;
+			targetProxy = 4F4713AC95022FA400BE8721 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13585B709BFDF93F665B7415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = Sources/iOS/Lengnuan.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sources/iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "冷暖";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A3A43896A1025066E424BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = Sources/iOS/Lengnuan.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sources/iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "冷暖";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B69FC8A3DCCD78B4931B048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = Sources/Widget/LengnuanWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sources/Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "冷暖";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID).widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E2F6587C1A17CFC2CE5A4E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "冷暖";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_MAC_BUNDLE_ID)";
+				PRODUCT_NAME = Lengnuan;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		7ED86036FE2DFA02C1326D6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = Sources/Widget/LengnuanWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sources/Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "冷暖";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID).widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B40AE48C116087CBC2285D88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "冷暖";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_MAC_BUNDLE_ID)";
+				PRODUCT_NAME = Lengnuan;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		CE3F28BC798B9AE48CF804ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83C64949801BABFD43DB97E0 /* Base.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FAAD457CB075BC2497A579FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83C64949801BABFD43DB97E0 /* Base.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		442A39AD109D5059B2382145 /* Build configuration list for PBXProject "Lengnuan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAAD457CB075BC2497A579FC /* Debug */,
+				CE3F28BC798B9AE48CF804ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46B3E7583A4040289FF73D2A /* Build configuration list for PBXNativeTarget "Lengnuan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13585B709BFDF93F665B7415 /* Release */,
+				3A3A43896A1025066E424BD5 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F51ABB52072648698EADC84 /* Build configuration list for PBXNativeTarget "LengnuanWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B69FC8A3DCCD78B4931B048 /* Release */,
+				7ED86036FE2DFA02C1326D6A /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A83AD56A19BECE59BE4164DD /* Build configuration list for PBXNativeTarget "Lengnuan-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E2F6587C1A17CFC2CE5A4E8 /* Release */,
+				B40AE48C116087CBC2285D88 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75C9E0DA64BC8AA448F58D9B /* Project object */;
+}

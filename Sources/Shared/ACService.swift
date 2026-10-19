@@ -120,7 +120,7 @@ final class ACService {
 
     /// 从云端读完整状态（常量 + 当前上报）
     func fetchState(reclaim: Bool, refreshConstants refresh: Bool = false) async throws -> ACState {
-        guard isLoggedIn else { throw Refused("还没登录，请先打开约克空调 App 登录") }
+        guard isLoggedIn else { throw Refused("还没登录，请先打开冷暖 App 登录") }
         let c = try await ensureController()
         var consts = Storage.constants
         if refresh || consts.isEmpty {
@@ -154,7 +154,7 @@ final class ACService {
     func run(power: Bool? = nil, toggle: Bool = false, mode: String? = nil, temp: Double? = nil,
              tempSteps: Double? = nil, fan: String? = nil, funcs: [String: Bool] = [:]) async throws -> ACState {
         reloadSession()
-        guard isLoggedIn else { throw Refused("还没登录，请先打开约克空调 App 登录") }
+        guard isLoggedIn else { throw Refused("还没登录，请先打开冷暖 App 登录") }
         // 依赖当前值的操作（开关切换、温度 ±1、附加功能的互斥）要较新的状态
         let relative = toggle || tempSteps != nil || !funcs.isEmpty
         var s: ACState
@@ -191,7 +191,7 @@ extension ACService {
     /// 设定简易定时。turnOn 为 nil 时和约克智慧家一样：开着就定时关机，关着就定时开机。
     func setTimer(hours: Double, turnOn: Bool? = nil) async throws -> ACState {
         reloadSession()
-        guard isLoggedIn else { throw Refused("还没登录，请先打开约克空调 App 登录") }
+        guard isLoggedIn else { throw Refused("还没登录，请先打开冷暖 App 登录") }
         guard timerHours.contains(hours) else { throw Refused("定时时长只能是半小时到 24 小时") }
         // 定时的方向取决于当前开关，缓存超过 1 分钟就先读一次云端
         var s: ACState
@@ -214,7 +214,7 @@ extension ACService {
 
     func cancelTimer() async throws -> ACState {
         reloadSession()
-        guard isLoggedIn else { throw Refused("还没登录，请先打开约克空调 App 登录") }
+        guard isLoggedIn else { throw Refused("还没登录，请先打开冷暖 App 登录") }
         let c = try await ensureController()
         _ = try await withSession(reclaim: true) { try await self.api.cancelSimpleTimer(c) }
         guard var s = cachedState() else { return ACState(xkqType: c.xkqType) }

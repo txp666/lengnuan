@@ -1,10 +1,10 @@
 // 公共配置。想装到自己手机上：复制 Local.xcconfig.example 为 Local.xcconfig，
 // 填上你自己的 Bundle ID 和开发者团队（Local.xcconfig 不会提交到 git）。
 
-// iPhone App 的 Bundle ID；小组件是 $(YORK_BUNDLE_ID).widget，App Group 是 group.$(YORK_BUNDLE_ID)
-YORK_BUNDLE_ID = com.example.yorkac
+// iPhone App 的 Bundle ID；小组件是 $(APP_BUNDLE_ID).widget，App Group 是 group.$(APP_BUNDLE_ID)
+APP_BUNDLE_ID = com.example.lengnuan
 // Mac 版的 Bundle ID
-YORK_MAC_BUNDLE_ID = $(YORK_BUNDLE_ID).mac
+APP_MAC_BUNDLE_ID = $(APP_BUNDLE_ID).mac
 // 开发者团队 ID（Xcode → Settings → Accounts 里能看到；免费 Apple ID 也有）
 DEVELOPMENT_TEAM =
 

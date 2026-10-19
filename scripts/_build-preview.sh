@@ -17,8 +17,8 @@ cat > "$APP/Contents/Info.plist" <<'PLIST'
 <plist version="1.0">
 <dict>
   <key>CFBundleExecutable</key><string>YorkPreview</string>
-  <key>CFBundleIdentifier</key><string>com.example.yorkac.preview</string>
-  <key>CFBundleName</key><string>约克空调预览</string>
+  <key>CFBundleIdentifier</key><string>com.example.lengnuan.preview</string>
+  <key>CFBundleName</key><string>冷暖预览</string>
   <key>CFBundlePackageType</key><string>APPL</string>
   <key>LSMinimumSystemVersion</key><string>14.0</string>
   <key>NSHighResolutionCapable</key><true/>

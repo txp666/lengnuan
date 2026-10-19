@@ -49,7 +49,7 @@ struct PreviewApp: App {
     }
 
     var body: some Scene {
-        WindowGroup("约克空调 · 界面预览") {
+        WindowGroup("冷暖 · 界面预览") {
             HStack(alignment: .top, spacing: 18) {
                 PhoneScreen(store: coolStore, scroll: true).environment(\.colorScheme, .dark)
                 PhoneScreen(store: offStore, scroll: true).environment(\.colorScheme, .light)
@@ -185,7 +185,7 @@ struct MacWindowShot: View {
                 Circle().fill(Color(red: 1.0, green: 0.74, blue: 0.18)).frame(width: 12, height: 12)
                 Circle().fill(Color(red: 0.16, green: 0.79, blue: 0.25)).frame(width: 12, height: 12)
                 Spacer()
-                Text("约克空调").font(.system(size: 13, weight: .semibold)).foregroundStyle(.secondary)
+                Text("冷暖").font(.system(size: 13, weight: .semibold)).foregroundStyle(.secondary)
                 Spacer()
                 Color.clear.frame(width: 52, height: 12)
             }

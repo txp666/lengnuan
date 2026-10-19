@@ -4,6 +4,7 @@ import Security
 /// 密码存在系统钥匙串里（只在勾选“记住密码”时），用于登录失效时自动重新登录。
 /// iOS 上放进 App Group 的钥匙串分组，Siri 意图和小组件也能用。
 enum Keychain {
+    // 旧名字，不要改：改了已保存的密码就读不到了
     private static let service = "YorkAC.password"
 
     private static func base(_ account: String, group: String?) -> [String: Any] {

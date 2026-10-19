@@ -196,7 +196,7 @@ func runTimerAC(_ op: () async throws -> ACState) async throws -> ACState {
 
 struct PowerOnIntent: AppIntent {
     static let title: LocalizedStringResource = "打开空调"
-    static let description = IntentDescription("让约克空调开机")
+    static let description = IntentDescription("让空调开机")
 
     @MainActor
     func perform() async throws -> some IntentResult & ProvidesDialog {
@@ -207,7 +207,7 @@ struct PowerOnIntent: AppIntent {
 
 struct PowerOffIntent: AppIntent {
     static let title: LocalizedStringResource = "关闭空调"
-    static let description = IntentDescription("让约克空调关机")
+    static let description = IntentDescription("让空调关机")
 
     @MainActor
     func perform() async throws -> some IntentResult & ProvidesDialog {

@@ -14,7 +14,7 @@ struct ACEntry: TimelineEntry {
         let c = Storage.controller
         var state = Storage.lastState.map { ACState(values: $0, xkqType: c?.xkqType ?? "9") }
         state?.overlay(Storage.constants)
-        return ACEntry(date: Date(), state: state, name: c?.name ?? "约克空调",
+        return ACEntry(date: Date(), state: state, name: c?.name ?? "空调",
                        loggedIn: Storage.session != nil)
     }
 
@@ -391,13 +391,14 @@ struct ACWidgetView: View {
 }
 
 struct ACStatusWidget: Widget {
+    // 旧名字，不要改：改了用户已经放好的小组件会失效
     let kind = "YorkACStatus"
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: ACProvider()) { entry in
             ACWidgetView(entry: entry)
         }
-        .configurationDisplayName("约克空调")
+        .configurationDisplayName("冷暖")
         .description("查看状态，直接开关、调温、切模式")
         .supportedFamilies([.systemSmall, .systemMedium,
                             .accessoryCircular, .accessoryRectangular, .accessoryInline])
@@ -407,17 +408,18 @@ struct ACStatusWidget: Widget {
 /// 控制中心 / 锁定屏幕 / 操作按钮 的开关（iOS 18+）
 @available(iOS 18.0, *)
 struct ACPowerControl: ControlWidget {
+    // 旧名字，不要改（同上）
     static let kind = "YorkACPowerControl"
 
     var body: some ControlWidgetConfiguration {
         StaticControlConfiguration(kind: Self.kind, provider: Provider()) { value in
-            ControlWidgetToggle("约克空调", isOn: value, action: SetPowerIntent()) { running in
+            ControlWidgetToggle("空调", isOn: value, action: SetPowerIntent()) { running in
                 Label(running ? "开" : "关", systemImage: running ? "snowflake" : "power")
             }
             .tint(.blue)
         }
         .displayName("空调开关")
-        .description("一键开关约克空调")
+        .description("一键开关空调")
     }
 
     struct Provider: ControlValueProvider {
@@ -430,7 +432,7 @@ struct ACPowerControl: ControlWidget {
 }
 
 @main
-struct YorkACWidgets: WidgetBundle {
+struct LengnuanWidgets: WidgetBundle {
     var body: some Widget {
         ACStatusWidget()
         if #available(iOS 18.0, *) {

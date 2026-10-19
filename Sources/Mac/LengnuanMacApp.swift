@@ -2,11 +2,11 @@ import SwiftUI
 
 @main
 @MainActor
-struct YorkACApp: App {
+struct LengnuanMacApp: App {
     @StateObject private var store = ACStore()
 
     var body: some Scene {
-        WindowGroup("约克空调") {
+        WindowGroup("冷暖") {
             RootView()
                 .environmentObject(store)
         }
